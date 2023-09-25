@@ -1,0 +1,55 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown </title>
+     </head>
+     <body>
+        <!-- <select name="non" id="samole">
+            <option value="orange">Orange</option>
+            <option value="Grapes"> Grapes</option>
+            <option value="Banana"> Banana</option>
+            <option value="Apples">Apple</option>
+        </select>
+        <br>
+        <button onclick="getvalue()"> Get Value</button>
+        <script type="text/javascript">
+            function getvalue(){
+                var value=document.getElementById("samole").value
+                alert(value)
+                // console.log(value)
+            }
+        </script> -->
+
+        <select  id="sample" multiple>
+            <option value="Asish"> Asish</option>
+            <option value="tapan"> tapan</option>
+            <option value="Alok">Alok</option>
+            <option value="Pruthibi"> Pruthibi</option>
+           
+            <option value="Abhinash"> Abhinash</option>
+            <option value="1"> 1</option>
+        </select>
+        
+        <button onclick="getvalues()"> Get Value</button>
+        <script type="text/javascript">
+            function getvalues(){
+                var options= document.getElementById("sample").options;
+                // console.log(friends)
+                 var options_count=document.getElementById("sample").options.length
+                 console.log(options_count)
+                var value=[];
+
+                for(var i = 0; i<options_count;i++){
+                    if(options[i].selected){
+                        value.push(options[i].value)
+                    }
+                }
+                alert(JSON.stringify(value))
+                
+
+            }
+        </script>
+     </body>
+     </html>

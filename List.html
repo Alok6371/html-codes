@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        .ul-circle {
+            list-style-type: none;
+        }
+
+        #ul-square {
+            list-style: square;
+        }
+
+        #upper-roman {
+            list-style-type: upper-roman;
+        }
+
+        #lower-alpha {
+            list-style: lower-alpha;
+
+        }
+
+        #upper-alpha {
+            list-style: upper-alpha;
+
+        }
+
+        #ul-none {
+            list-style-type: none;
+        }
+
+        #new-ele li::before{
+            content: "-->>";
+            font-size: 20px;
+            font-weight: 900;
+            color: rgb(54, 191, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ul>
+        <li>General Data</li>
+        <ul>
+            <li>Specific Data</li>
+            <li>Specific Data</li>
+            <li>Specific Data</li>
+        </ul>
+        <li>General Data</li>
+        <li>
+            <ol>
+                <li>Specific Data</li>
+                <li>Specific Data</li>
+                <li>Specific Data</li>
+            </ol>
+        </li>
+    </ul> -->
+
+    <P>SOME ID PERPOTY USING</P>
+    <ul class="ul-circle">
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+    </ul>
+    <ul id="ul-square">
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+    </ul>
+    <ol id="upper-roman">
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+    </ol>
+    <ol id="lower-alpha">
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+    </ol>
+    <ol id="upper-alpha">
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+        <li>Specific Data</li>
+    </ol>
+    <ul id="ul-none">
+        <div id="new-ele">
+            <li>Specific Data</li>
+            <li>Specific Data</li>
+            <li>Specific Data</li>
+        </div>
+    </ul>
+</body>
+
+</html>

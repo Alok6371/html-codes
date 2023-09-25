@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+</head>
+
+<body>
+    <!-- ***********************Text***************** -->
+    <!-- <input type="text" name="" id="demo">
+    <br>
+    <button onclick="getvalue()"> Get Value</button>
+    <script type="text/javascript">
+        function getvalue(){
+           alert( document.getElementById("demo").value);
+        }
+    </script> -->
+    <!-- ***********************COLOR***************** -->
+    <!-- <input type="color" name="" id="demo">
+    <br>
+    <button onclick="getvalue()"> Get Value</button>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+    <!-- ***********************CHECK BOX***************** -->
+    <!-- <input type="checkbox" name="" id="demo">
+    <br>
+    <button onclick="getvalue()"> get Value</button>
+    <script type="text/javascript">
+        function getvalue() {
+            alert(document.getElementById("demo").checked)
+        }
+    </script> -->
+    <!-- ***********************DATE***************** -->
+    <!-- <input type="datetime-local" name="" id="demo">
+    <br>
+    <button ondblclick="getvalue()"> Get Value</button>
+     <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+     </script> -->
+    <!-- ***********************EMAIL***************** -->
+    <!-- <p>Enter the invalid Email and press the submit button </p>
+    <form action="model.jpg" method="get">
+    <input type="email" name="email" id="demo">
+    <input type="submit"></form>
+    <button onclick="getvalue()"> Get Value</button>
+    <br>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+    <!-- ***********************FILE***************** -->
+    <input type="file"  id="demo" onchange="readFile();" >
+    <img src="" alt="The file is shown Here" id="result" width="100%"/>
+    <script type="text/javascript">
+        function readFile(){
+            var reader= new FileReader();
+            var file=document.getElementById('demo').files[0];
+
+            reader.onload=function(e){
+                document.getElementById('result').src=e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+    <!-- ***********************HIDDEN***************** -->
+    <!-- <input type="hidden" name="" id="demo" value="My name is Alok Pradhan"><br>
+    <button onclick="getvalue()"> Getvalue</button>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+    <!-- ***********************PASSWORD***************** -->
+    <!-- <input type="password" id="demo" placeholder="password">
+    <br>
+    <button onclick="getvalue()"> Getvalue</button>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+    <!-- ***********************RADIO***************** -->
+
+    <!-- <label for="female">Female</label>
+    <input type="radio" class="gender" id="female" value="female">
+    <br>
+    <label for="male">Male</label>
+    <input type="radio" class="gender" id="male" value="male">
+    <br>
+    <label for="male">Trans-Gender</label>
+    <input type="radio" class="gender" id="male" value="Trans-Gender">
+    <br>
+    <button onclick="getValue()"> Get Value</button>
+    <script type="text/javascript">
+        var radios = document.getElementsByClassName("gender")
+        // console.log(radios)
+        var radios_length = radios.length
+        // console.log(radios_length)
+        function getValue() {
+            for (var i = 0; i < radios_length; i++) {
+                if (radios[i].checked) {
+                    alert(radios[i].value)
+                }
+            }
+        } 
+    </script> -->
+    <!-- ***********************RANGE***************** -->
+    <!-- <input type="range" name="" id="demo">
+    <button onclick="getvalue()"> Get value</button>
+     <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+     </script>  -->
+    <!-- ***********************SEARCH***************** -->
+     <!-- <input type="search" name="" id="demo">
+     <br>
+     <button ondblclick="getvalue()"> get Value</button>
+     <script type="text/javascript">
+         function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+     </script>  -->
+    <!-- ***********************TELEPHONE NUMBER***************** -->
+    <!-- <input type="tel" name="" id="demo">
+     <br>
+     <button onclick="getvalue()"> Get Value</button>
+     <script type="text/javascript">
+        function getvalue(){
+            console.log(document.getElementById("demo").value)
+        }
+     </script> -->
+    <!-- ***********************TELEPHONE NUMBER***************** -->
+    <!-- <input type="time"  id="demo">
+     <br>
+     <button onclick="getvalue()"> Get Value</button>
+     <script type="text/javascript">
+        function getvalue(){
+            console.log(document.getElementById("demo").value)
+        }
+     </script> -->
+    <!-- ***********************URL***************** -->
+    <!-- <p>Enter the invalid url and press the submit button </p>
+    <form action="model.jpg" method="get">
+        <input type="url" name="email" id="demo">
+        <input type="submit">
+    </form>
+    <button onclick="getvalue()"> Get Value</button>
+    <br>
+    <script type="text/javascript">
+        function getvalue() {
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+    <!-- ***********************WEEK***************** -->
+    <!-- <input type="week" name="" id="" />
+    <br>
+    <button onclick="getvalue()"> Getvalue</button>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("demo").value)
+        }
+    </script> -->
+</body>
+
+</html>
