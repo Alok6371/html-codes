@@ -1,1 +1,24 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textareas</title>
+    <style>
+        textarea{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="non" id="non" cols="30" rows="10" placeholder="Type your Message...."></textarea>
+    <br>
+    <button onclick="getvalue()"> Get Value</button>
+    <script type="text/javascript">
+        function getvalue(){
+            alert(document.getElementById("non").value)
+        }
+    </script>
+</body>
+</html>
